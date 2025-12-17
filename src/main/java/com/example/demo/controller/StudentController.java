@@ -11,7 +11,7 @@ import com.example.demo.service.StudentEntity;
 public class StudentController
 {
     @Autowired  StudentService ser;
-    @PostMapping("/userdata");
+    @PostMapping("/post");
     public StudentEntity sendData(@RequestBody StudentEntity stu){
         return ser.postdata(stu);
     }   
