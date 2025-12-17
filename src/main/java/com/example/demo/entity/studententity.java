@@ -1,10 +1,11 @@
 package com.example.demo.entity;
 
-
+import jakarata.persistance.entity
 
 @entity
 // Data
 public class studententity{
+    @Id
     private Integer id;
     private String name;
     private String email;
@@ -41,8 +42,12 @@ public String getPassword(){
 public String setPassword(String password){
     this.password=password;
 }
+// Date
 public Date getCreated(){
-    
+    return created;
+}
+public Date setCreated(Date created){
+    this.created=created
 }
 // constructer
 public studententity(String name,Integer id,String email,String password){
