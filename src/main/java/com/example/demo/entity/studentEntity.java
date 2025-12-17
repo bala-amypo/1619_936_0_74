@@ -9,7 +9,7 @@ import jakarta.persistence.GenerationType;
 
 @Entity
 // Data
-public class studententity{
+public class studentEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
@@ -24,39 +24,39 @@ public class studententity{
 public String getName(){
     return name;
 }
-public String setName(String name){
+public void setName(String name){
     this.name=name;
 }
 // Id
 public Integer getId(){
     return id;
 }
-public Integer setId(Integer id){
+public void setId(Integer id){
     this.id=id;
 }
 // email
 public String getEmail(){
     return email;
 }
-public String setEmail(String email){
+public void setEmail(String email){
     this.email=email;
 }
 // password
 public String getPassword(){
     return password;
 }
-public String setPassword(String password){
+public void setPassword(String password){
     this.password=password;
 }
 // Date
 public Date getCreated(){
     return created;
 }
-public Date setCreated(Date created){
+public void setCreated(Date created){
     this.created=created
 }
 // constructer
-public studententity(String name,Integer id,String email,String password,Date created){
+public studentEntity(String name,Integer id,String email,String password,Date created){
     this.name=name;
     this.id=id;
     this.email=email;
@@ -64,6 +64,6 @@ public studententity(String name,Integer id,String email,String password,Date cr
     this.created=created;
 }
 // Default constructor
-public studententity(){
+public studentEntity(){
 
 }
