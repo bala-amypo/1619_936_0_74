@@ -12,5 +12,23 @@ public class studententity{
 
 }
 public String getName(){
-    return name
+    return name;
+}
+public String setName(String name){
+    this.name=name;
+}
+public Integer getId(){
+    return id;
+}
+public Integer setId(Integer id){
+    this.id=id;
+}
+public String getEmail(){
+    return email;
+}
+public String setEmail(String email){
+    this.email=email;
+}
+public String getPassword(){
+    
 }
