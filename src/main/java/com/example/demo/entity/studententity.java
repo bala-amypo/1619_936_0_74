@@ -1,4 +1,4 @@
-package com.example.demo.entity
+package com.example.demo.entity;
 
 
 
@@ -9,6 +9,7 @@ public class studententity{
     private String name;
     private String email;
     private String password;
+    private Date created;
 
 }
 // Getter and setters for the data
@@ -40,10 +41,18 @@ public String getPassword(){
 public String setPassword(String password){
     this.password=password;
 }
+public Date getCreated(){
+    
+}
 // constructer
 public studententity(String name,Integer id,String email,String password){
     this.name=name;
     this.id=id;
     this.email=email;
     this.password=password;
+    this.created=created
+}
+// Default constructor
+public studententity(){
+
 }
