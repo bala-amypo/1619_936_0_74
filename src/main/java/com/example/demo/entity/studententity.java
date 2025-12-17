@@ -5,9 +5,8 @@ package com.example.demo.entity
 @entity
 // Data
 public class studententity{
-
-    private String name;
     private Integer id;
+    private String name;
     private String email;
     private String password;
 
@@ -39,5 +38,12 @@ public String getPassword(){
     return password;
 }
 public String setPassword(String password){
+    this.password=password;
+}
+// constructer
+public studententity(String name,Integer id,String email,String password){
+    this.name=name;
+    this.id=id;
+    this.email=email;
     this.password=password;
 }
