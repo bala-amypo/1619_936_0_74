@@ -1,13 +1,13 @@
 package com.example.demo.entity;
 
 
-import jakarta.persistence.entity;
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
 
-@entity
+@Entity
 // Data
 public class studententity{
     @Id
@@ -61,7 +61,7 @@ public studententity(String name,Integer id,String email,String password){
     this.id=id;
     this.email=email;
     this.password=password;
-    this.created=created
+    this.created=created;
 }
 // Default constructor
 public studententity(){
