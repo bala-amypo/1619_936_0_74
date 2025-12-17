@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
-import jakarata.persistance.entity
+import jakarta.persistance.entity;
+import jakarta.persistance.Id;
 
 @entity
 // Data
