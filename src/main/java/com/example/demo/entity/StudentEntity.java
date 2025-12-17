@@ -18,8 +18,7 @@ public class StudentEntity{
     private String password;
     private Date created;
 
-}
-// Getter and setters for the data
+    // Getter and setters for the data
 // Name
 public String getName(){
     return name;
@@ -53,7 +52,7 @@ public Date getCreated(){
     return created;
 }
 public void setCreated(Date created){
-    this.created=created
+    this.created=created;
 }
 // constructer
 public StudentEntity(String name,Integer id,String email,String password,Date created){
@@ -66,4 +65,5 @@ public StudentEntity(String name,Integer id,String email,String password,Date cr
 // Default constructor
 public StudentEntity(){
 
+ }
 }
