@@ -1,1 +1,8 @@
-package
+package com.example.demo.service.impl;
+
+
+
+@service
+public class StudentServiceImpl{
+    
+}
