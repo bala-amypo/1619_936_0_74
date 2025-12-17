@@ -10,7 +10,7 @@ public class StudentController
     @Autowired  StudentService ser;
     @PostMapping("/userdata");
     public StudentEntity sendData(@Requestbody StudentEntity stu){
-        return 
+        return ser.postdata(stu);
     }   
 
 
