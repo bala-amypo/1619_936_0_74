@@ -4,9 +4,9 @@ import jakarta.persistence;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import springframework.web.bind.annotation.NotNull;
-import springframework.web.bind.annotation.Size;
-import springframework.web.bind.annotation.Email;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.Email;
 
 @Entity
 public class ValidationEntity{
@@ -19,10 +19,12 @@ public class ValidationEntity{
     @Size(min=2,max=30,message="2 to 10 character must be there")
     Private String username;
 
-    @Email
+    @Email(message="Give a valid email")
     Private String email;
 
-    @
+    @Max6
+    @NotNull(message="Password should not be empty")
     Private String password;
+
     Private Integer age;
 }
