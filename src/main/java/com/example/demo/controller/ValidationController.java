@@ -3,7 +3,9 @@ package com.example.demo.controller;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
-import com.example.demo.
+import com.example.demo.service.ValidationService;
+import com.example.demo.entity.ValidationEntity;
+import 
 
 @RestController
 public class ValidationController
@@ -11,6 +13,6 @@ public class ValidationController
     @Autowired ValidationService sere;
     @PostMapping("/userdatas")
     public ValidationEntity sendData(@Valid @RequestBody ValidationEntity vau){
-        return sere.postValue(vau);
+        return sere.postData(vau);
     }
 }
