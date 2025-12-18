@@ -29,7 +29,7 @@ public class StudentController
         return ser.deleteData(id);
     }
     @GetMapping("/finddata/{id}")
-    public String StudentEntity findd(int in){
+    public String StudentEntity findd(int id){
         return ser.findthe(id);
     }
 }
