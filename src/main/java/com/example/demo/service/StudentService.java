@@ -12,4 +12,6 @@ public interface StudentService{
     String  deleteData(int id);
     // to find id
     StudentEntity find(int id);
+    // update
+    StudentEntity update(StudentEntity stu)
 }
