@@ -6,6 +6,6 @@ import com.example.demo.entity.ValidationEntity;
 
 
 @Repository
-public interface ValidationRepository extends JpaRepository<ValidationEntity,Integer>{
+public interface ValidationRepository extends JpaRepository<ValidationEntity,Long>{
     
 }
