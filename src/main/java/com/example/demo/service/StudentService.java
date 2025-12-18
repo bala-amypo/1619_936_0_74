@@ -13,5 +13,5 @@ public interface StudentService{
     // to find id
     StudentEntity find(int id);
     // update
-    StudentEntity update(StudentEntity stu)
+    StudentEntity update(int id,StudentEntity stu);
 }
