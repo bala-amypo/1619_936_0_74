@@ -34,7 +34,7 @@ public class StudentController
         return ser.find(id);
     }
     @PutMapping("/update/{id}")
-    public StudentEntity upd(@PathVariable int id){
+    public StudentEntity upd(@PathVariable int id,@RequestBody StudentEntity stu){
         return ser.update(id);
     }
 }
