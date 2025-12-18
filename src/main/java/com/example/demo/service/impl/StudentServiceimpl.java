@@ -32,7 +32,7 @@ public class StudentServiceimpl implements StudentService{
     }
     @Override
     public StudentEntity update(int id,StudentEntity stu){
-        if(student.existById(id)){
+        if(student.existsById(id)){
             stu.setId(id);
             return student.save(stu);
         }
