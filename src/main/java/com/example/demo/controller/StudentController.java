@@ -30,6 +30,6 @@ public class StudentController
     }
     @GetMapping("/finddata/{id}")
     public StudentEntity findd(int id){
-        return ser.findthe(id);
+        return ser.find(id);
     }
 }
