@@ -26,5 +26,9 @@ public class StudentServiceimpl implements StudentService{
         student.deleteById(id);
         return "Deleted Successfully";
     }
+    @Override
+    public String StudentEntity findthe(int id){
+        student.findById(id);
+    }
 
 }

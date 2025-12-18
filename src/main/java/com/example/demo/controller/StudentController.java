@@ -28,4 +28,8 @@ public class StudentController
     public String deletesuc(@PathVariable int id){
         return ser.deleteData(id);
     }
+    @GetMapping("/finddata/{id}")
+    public StudentEntity findd(int in){
+        return ser.findthe(id);
+    }
 }

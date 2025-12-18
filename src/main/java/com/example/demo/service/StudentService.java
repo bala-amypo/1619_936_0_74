@@ -10,5 +10,6 @@ public interface StudentService{
     List<StudentEntity>getAlldata();
     // delete data
     String  deleteData(int id);
-    
+    // to find id
+    StudentEntity find(int id);
 }
