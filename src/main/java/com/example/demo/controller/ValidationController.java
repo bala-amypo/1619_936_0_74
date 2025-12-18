@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.service.ValidationService;
 import com.example.demo.entity.ValidationEntity;
+import org.springframework.web.bind.annotation.PostMapping;
 import jakarta.validation.Valid;
 
 @RestController
