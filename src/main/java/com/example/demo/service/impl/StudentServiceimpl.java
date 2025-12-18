@@ -11,14 +11,14 @@ import com.example.demo.repository.StudentRepository;
 public class StudentServiceimpl implements StudentService{
 
     @Autowired StudentRepository student;
-// save,findAll(),findbyId,deletId(),existbyId()
+    //  save,findAll(),findbyId,deletId(),existbyId()
     @Override
     public StudentEntity postdata(StudentEntity stu){
         return student.save(stu);
     }
     @override
     public List<StudentEntity> getAlldata(){
-        
+        return student.findAll();
     }
 
 }
