@@ -57,7 +57,7 @@ public class ValidationEntity {
         @NotNull @Size(min = 2, max = 30, message = "2 to 30 characters required") String username, 
         @NotNull @Email(message = "Give a valid email") String email,
         @NotNull(message = "Password should not be empty") @Size(min = 2, max = 8, message = "Password must be in the range of 2 to 8") String password,
-        Integer age) {
+        @Positive(message = "Age must be a positive number") @Max(30) Integer age) {
         this.id = id;
         this.username = username;
         this.email = email;
