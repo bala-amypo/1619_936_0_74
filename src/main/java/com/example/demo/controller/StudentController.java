@@ -22,6 +22,8 @@ public class StudentController
     public List<StudentEntity> getVal(){
         return ser.getAlldata();
     }
+    @DeleteMapping("/delete/{id}")
+    public String 
 
 
 }
