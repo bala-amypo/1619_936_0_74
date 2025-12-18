@@ -21,7 +21,6 @@ public class StudentServiceimpl implements StudentService{
     public List<StudentEntity> getAlldata(){
         return student.findAll();
     }
-    @Override
     public String deleteData(Integer id){
         student.deleteById(id);
         return "Deleted Successfully";
