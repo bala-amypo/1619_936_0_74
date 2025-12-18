@@ -12,7 +12,7 @@ import jakarta.validation.Valid;
 public class ValidationController
 {
     @Autowired ValidationService sere;
-    @PostMapping("/userdata")
+    @PostMapping("/userdatas")
     public ValidationEntity sendDatas(@Valid @RequestBody ValidationEntity vau){
         return sere.postData(vau);
     }
