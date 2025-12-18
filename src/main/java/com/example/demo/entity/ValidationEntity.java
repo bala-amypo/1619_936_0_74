@@ -76,7 +76,7 @@ public class ValidationEntity{
     @Email(message="Give a valid email")
     Private String email;
 
-    @Size(min=2,max=8,message="The password must be in the range of 2 to 8 ")
+    @Size(min=2,max=8,message="Password must be in the range of 2 to 8 ")
     @NotNull(message="Password should not be empty")
     Private String password;
 
