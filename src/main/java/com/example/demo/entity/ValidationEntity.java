@@ -83,11 +83,15 @@ public class ValidationEntity{
     @Positive(message="Age must be a positive number")
     @Max30
     Private Integer age;
-){
-this.id=id;
-this.username=username;
-this.email=email;
-this.password=password;
-this.age=age;
+    ){
+        this.id=id;
+        this.username=username;
+        this.email=email;
+        this.password=password;
+        this.age=age;
+    }
+    public ValidationEntity(){
+        
+    }
 
 }
