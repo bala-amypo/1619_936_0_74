@@ -9,5 +9,5 @@ public interface StudentService{
     // getdata no parameter because data is saved nothing else
     List<StudentEntity>getAlldata();
     // delete data
-    String deleteData(Integer id);
+    String deleteData(int id);
 }
