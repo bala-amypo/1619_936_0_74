@@ -8,7 +8,7 @@ import com.example.demo.repository.ValidationRepository;
 
 @Service
 public class ValidationServiceimpl implements ValidationService{
-    @Autowired ValidationRepository valide
+    @Autowired ValidationRepository valide;
     @Override
     public ValidationEntity postData(ValidationEntity vau){
         retuen valide.save(vau);
