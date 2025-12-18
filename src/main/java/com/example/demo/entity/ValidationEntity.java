@@ -52,6 +52,42 @@ public class ValidationEntity{
         this.email=email;
     }
     public String getPassword(){
-        
+        return password;
     }
+    public void setPassword(String password){
+        this.password=password;
+    }
+    public Integer getAge(){
+        return age;
+    }
+    public void setAge(Integer age){
+        this.age=age
+    }
+
+    public ValidationEntity( @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    Private Long id;
+
+    @NotNull
+    @Size(min=2,max=30,message="2 to 10 character must be there")
+    Private String username;
+
+    @NotNull
+    @Email(message="Give a valid email")
+    Private String email;
+
+    @Size(min=2,max=8,message="The password must be in the range of 2 to 8 ")
+    @NotNull(message="Password should not be empty")
+    Private String password;
+
+    @Positive(message="Age must be a positive number")
+    @Max30
+    Private Integer age;
+){
+this.id=id;
+this.username=username;
+this.email=email;
+this.password=password;
+this.age=age;
+
 }
