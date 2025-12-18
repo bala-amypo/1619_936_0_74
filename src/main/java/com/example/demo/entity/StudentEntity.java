@@ -10,8 +10,10 @@ import jakarta.persistence.GenerationType;
 @Entity
 // Data,class layer
 public class StudentEntity{
+    
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
+
     private Integer id;
     private String name;
     private String email;
