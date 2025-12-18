@@ -29,7 +29,7 @@ public class StudentController
         return ser.deleteData(id);
     }
     @GetMapping("/finddata/{id}")
-    public StudentEntity findd(int id){
+    public StudentEntity findd(@PathVariable int id){
         return ser.find(id);
     }
 }
