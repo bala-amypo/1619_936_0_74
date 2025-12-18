@@ -32,4 +32,6 @@ public class StudentController
     public StudentEntity findd(@PathVariable int id){
         return ser.find(id);
     }
+    @PostMapping("/update/{id}")
+    public StudentEntity upd()
 }
