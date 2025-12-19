@@ -4,9 +4,9 @@ package com.example.demo.controller;
 
 @RestController
 public class TimeStampController{
-    @Autowired 
+    @Autowired TimeStampService serf;
     @PostMapping("/userdata2")
-    public TimeStampEntity sendedData(@RequestBody TimeStampEntity s){
-        return .
+    public TimeStampEntity sendedData(@RequestBody TimeStampEntity ts){
+        return serf.postData2(ts);
     }
 }
