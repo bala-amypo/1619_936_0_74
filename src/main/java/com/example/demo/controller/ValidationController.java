@@ -20,7 +20,7 @@ public class ValidationController
     }
     
     @GetMapping("/finddatas/{id}")
-    public ValidationEntity findd1(@PathVariable long id){
+    public ValidationEntity findd1(@Valid @PathVariable long id){
         return sere.find1(id);
     }
 }
