@@ -3,9 +3,10 @@ package com.example.demo.service.impl
 
 
 @Service
-public class Serviceimpl implements ValidationService{
-    @Autowired ValidationRepository valide;
+public class TimeStampServiceimpl implements TimeStampService{
+    @Autowired TimeStampRepository repo;
     @Override
-    public ValidationEntity postData1(ValidationEntity vau){
-        return valide.save(vau);
+    public TimeStampEntity postData2(TimeStampEntity std){
+        return repo.save(std);
     }
+}
