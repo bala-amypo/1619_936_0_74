@@ -20,5 +20,6 @@ public class IdEntity{
     private int idname;
     
     @OneToOne
+    @JoinColumn(name = "details_id")
     private DetailsEntity details;
 }
