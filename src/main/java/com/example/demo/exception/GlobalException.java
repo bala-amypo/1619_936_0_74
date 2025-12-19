@@ -10,8 +10,8 @@ public class GlobalException{
 
 
 
-      public ResponseEntity<String> handleValidationException(ValidationException pt){
-        return new ResponseEntity<String>(pt.getMessage(),HttpStatus.Bad_Gateway);
+    @ExceptionHandler(ValidationException.class)
+    public ResponseEntity<String> handleValidationException(ValidationException pt){
+        return new ResponseEntity<String>(pt.getMessage(),HttpStatus.Bad_Request);
     }
-  @ExceptionHandler(ValidationException.class)
 }
