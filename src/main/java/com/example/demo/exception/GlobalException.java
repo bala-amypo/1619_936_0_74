@@ -13,6 +13,6 @@ public class GlobalException{
 
     @ExceptionHandler(ValidationException.class)
     public ResponseEntity<String> handleValidationException(ValidationException pt){
-        return new ResponseEntity<String>(pt.getMessage(),HttpStatus.Bad_Request);
+        return new ResponseEntity<String>(pt.getMessage(),HttpStatus.BAD_REQUEST);
     }
 }
