@@ -9,9 +9,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @RestController
 public class TimeStampController{
+
     @Autowired TimeStampService serf;
+
     @PostMapping("/userdata2")
     public TimeStampEntity sendedData(@RequestBody TimeStampEntity ts){
         return serf.postData2(ts);
     }
+    
 }
