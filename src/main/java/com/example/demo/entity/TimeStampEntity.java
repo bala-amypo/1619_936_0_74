@@ -12,7 +12,7 @@ import jakarta.persistence.GenerationType;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TimeStamp{
+public class TimeStampEntity{
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
