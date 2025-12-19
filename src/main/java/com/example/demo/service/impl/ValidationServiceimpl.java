@@ -14,7 +14,7 @@ public class ValidationServiceimpl implements ValidationService{
         return valide.save(vau);
     }
     @Override
-    public ValidationEntity find(int id){
+    public ValidationEntity find(long id){
         return valide.findById(id);
     }
 

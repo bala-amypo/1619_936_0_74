@@ -6,5 +6,5 @@ public interface ValidationService{
     // postdata
     ValidationEntity postData(ValidationEntity vau);
     // findbyId
-    ValidationEntity find(int id);
+    ValidationEntity find(long id);
 }

@@ -16,4 +16,8 @@ public class ValidationController
     public ValidationEntity sendDatas(@Valid @RequestBody ValidationEntity vau){
         return sere.postData(vau);
     }
+     @GetMapping("/finddata/{id}")
+    public ValidationEntity findd(@PathVariable long id){
+        return sere.find(id);
+    }
 }
