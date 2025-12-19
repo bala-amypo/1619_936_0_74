@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Persist
 public class TimeStampEntity{
     
     @Id
@@ -22,5 +23,6 @@ public class TimeStampEntity{
     private String email;
     private LocalDateTime created;
     private LocalDateTime update;
-    
+
+    public TimeStampEntity    
 }
