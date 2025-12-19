@@ -1,6 +1,6 @@
 package com.example.demo.exception;
 
-import T
+import java.lang.RuntimeException;
 
 public ValidationException extends RuntimeException{
     public ValidationException (String message){
