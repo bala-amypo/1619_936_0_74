@@ -18,4 +18,6 @@ public class IdEntity{
     private Integer id;
     private int idname;
     
+    @OneToOne
+    private DetailsEntity details;
 }

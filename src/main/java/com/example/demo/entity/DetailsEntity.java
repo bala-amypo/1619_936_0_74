@@ -20,4 +20,8 @@ public class DetailsEntity{
     private Integer id;
     private String name;
     private String email;
+
+    @OneToOne
+    @JoinColumn(name = "S", referencedColumnName = "id")
+    private UserEntity user;
 }
