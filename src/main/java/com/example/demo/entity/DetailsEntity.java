@@ -22,6 +22,6 @@ public class DetailsEntity{
     private String email;
 
     @OneToOne
-    @JoinColumn(name = "S", referencedColumnName = "id")
+    @JoinColumn(name = "student_id")
     private UserEntity user;
 }
