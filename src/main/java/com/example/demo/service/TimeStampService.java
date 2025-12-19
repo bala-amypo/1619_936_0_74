@@ -4,5 +4,5 @@ import com.example.demo.entity.TimeStampEntity;
 
 public interface TimeStampService{
     // postdata
-    TimeStampEntity postdata2(TimeStampEntity std);
+    TimeStampEntity postData2(TimeStampEntity std);
 }
