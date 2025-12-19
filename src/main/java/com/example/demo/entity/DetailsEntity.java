@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
 
 @Entity
 @Data
@@ -22,6 +23,7 @@ public class DetailsEntity{
 
     @OneToOne
     private DetailsEntity details{
-
+        @JoinColoumn(name="student_id")
+        private DetailsEntity de;
     }
 }
