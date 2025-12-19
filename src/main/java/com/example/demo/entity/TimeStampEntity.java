@@ -24,5 +24,9 @@ public class TimeStampEntity{
     private LocalDateTime created;
     private LocalDateTime update;
 
-    public TimeStampEntity    
+    public void onCreate(){
+    LocalDateTime = new LocalDateTime()
+    this.created=now;
+    this.update=now;
+    }
 }
