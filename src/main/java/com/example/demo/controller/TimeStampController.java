@@ -6,7 +6,7 @@ package com.example.demo.controller;
 public class TimeStampController{
     @Autowired 
     @PostMapping("/userdata2")
-    public TimeStampEntity sendedData(@RequestBody TimeStampEntity ){
+    public TimeStampEntity sendedData(@RequestBody TimeStampEntity s){
         return .
     }
 }
