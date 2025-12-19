@@ -13,11 +13,11 @@ public class ValidationController
 {
     @Autowired ValidationService sere;
     @PostMapping("/userdatas")
-    public ValidationEntity sendDatas(@Valid @RequestBody ValidationEntity vau){
+    public ValidationEntity sendDatas1(@Valid @RequestBody ValidationEntity vau){
         return sere.postData(vau);
     }
-     @GetMapping("/finddata/{id}")
-    public ValidationEntity findd(@PathVariable long id){
+     @GetMapping("/finddatas/{id}")
+    public ValidationEntity findd1(@PathVariable long id){
         return sere.find(id);
     }
 }
