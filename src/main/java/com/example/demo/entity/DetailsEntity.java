@@ -17,5 +17,5 @@ public class DetailsEntity{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private String emil;
+    private String email;
 }
