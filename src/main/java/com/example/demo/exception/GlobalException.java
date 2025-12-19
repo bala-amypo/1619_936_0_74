@@ -1,11 +1,11 @@
 package com.example.demo.exception;
 
 import org.springframwork.http.HttpStatus;
-import org.springframework.web.bind.annotation.RestControllerAdvise;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.http.ResponseEntity;
 
-@RestControllerAdvise
+@RestControllerAdvice
 public class GlobalException{
 
 
