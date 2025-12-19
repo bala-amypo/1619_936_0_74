@@ -20,10 +20,4 @@ public class DetailsEntity{
     private Integer id;
     private String name;
     private String email;
-
-    @OneToOne
-    private DetailsEntity details{
-        @JoinColoumn(name="student_id")
-        private DetailsEntity de;
-    }
 }
