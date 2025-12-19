@@ -7,6 +7,7 @@ import jakarta.persistence.GenerationType;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import jakarta.persistence.OneToOne;
 
 @Entity
 @Data
@@ -19,7 +20,8 @@ public class DetailsEntity{
     private String name;
     private String email;
 
-    private DetailsEntity details(){
-        
+    @OneToOne
+    private DetailsEntity details{
+
     }
 }
