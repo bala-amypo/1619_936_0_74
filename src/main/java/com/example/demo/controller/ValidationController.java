@@ -16,9 +16,9 @@ public class ValidationController
     @Autowired ValidationService sere;
     @PostMapping("/userdatas")
     public ValidationEntity sendDatas1(@Valid @RequestBody ValidationEntity vau){
-        return sere.postData(vau);
+        return sere.postData1(vau);
     }
-    
+
     @GetMapping("/finddatas/{id}")
     public ValidationEntity findd1(@PathVariable long id){
         return sere.find1(id);
