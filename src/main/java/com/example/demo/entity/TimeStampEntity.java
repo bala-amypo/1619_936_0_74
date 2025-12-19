@@ -13,7 +13,6 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Persist
 public class TimeStampEntity{
     
     @Id
@@ -24,9 +23,15 @@ public class TimeStampEntity{
     private LocalDateTime created;
     private LocalDateTime update;
 
+    @Persist
     public void onCreate(){
-    LocalDateTime = new LocalDateTime()
-    this.created=now;
-    this.update=now;
+        LocalDateTime = now LocalDateTime().now();
+        this.created=now;
+        this.update=now;
     }
+    @PreUpdate
+    public void onUpdate(){
+         
+    }
+
 }
